@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #112B42; /* deep navy */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #AED6F1;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #112B42;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
