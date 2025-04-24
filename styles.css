@@ -1,62 +1,101 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&display=swap');
+
+:root {
+  --primary: #112B42;
+  --accent: #A8C4E2;
+  --bg: #FFFFFF;
+  --light-bg: #F7F9FB;
+  --text: #333333;
+}
+
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #ffffff;
-    color: #333;
-  }
-  
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 header {
-background-color: #112B42; /* deep navy */
-color: white;
-padding: 2rem;
-text-align: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
-color: #AED6F1;
-margin: 0 1rem;
-text-decoration: none;
+  color: var(--accent);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
-padding: 2rem;
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--light-bg);
+  border-radius: 12px;
+  margin-top: 2rem;
 }
 
-footer {
-background-color: #112B42;
-color: white;
-text-align: center;
-padding: 1rem;
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--primary);
 }
 
 details {
-margin-top: 1rem;
-background-color: #f0f4f8;
-padding: 1rem;
-border-radius: 8px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-max-width: 400px;
+  margin-top: 1rem;
+  background-color: var(--bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 summary {
-cursor: pointer;
-font-size: 1.1rem;
-color: #112B42;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 details ul {
-margin-top: 0.5rem;
-padding-left: 1rem;
-list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  list-style: none;
 }
 
 details li {
-margin: 0.3rem 0;
+  margin: 0.3rem 0;
 }
 
 .map-container {
-margin-top: 1rem;
-border-radius: 12px;
-overflow: hidden;
-max-width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
 }
